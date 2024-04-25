@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<div lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/ <link rel=" preconnect"
+      href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-family: "Ubuntu", sans-serif;
+
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      background-image:
+        url("images/bgimage.png");
+      background-size: contain;
+
+    }
+
+
+    .LogoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      width: 100%;
+    }
+
+    .Navbar {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+    }
+
+    .Navbarcontainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+    }
+
+    .Navbarcontainer .Navbar .link {
+      text-decoration: none;
+      color: #000;
+      /* Bağlantı metinlerinin varsayılan rengi */
+      position: relative;
+      /* Bağlantıların konumunu belirle */
+    }
+
+    .Navbarcontainer .Navbar .link:hover {
+      color: #000A76;
+      /* Bağlantı metinlerinin üzerine gelindiğindeki renk - turuncu */
+    }
+
+
+    .Navbarcontainer .Navbar .link:hover::before {
+      /* Üst çizgiyi ayarla */
+      bottom: auto;
+    }
+
+
+    .link {
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #43515B;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .lineContainer {
+      margin: 10px 0 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .line {
+      width: 96%;
+      height: 2px;
+      background: #000;
+    }
+
+    .Line {
+      width: 30%;
+      height: 3px;
+    }
+
+    .slidercontainer {
+      text-align: center;
+
+    }
+
+    .baslikcontainer {
+      color: #808080;
+      width: 100%;
+
+    }
+
+    .yazi {
+      font-size: 20px;
+      font-family: Times New Roman', Times, serif;">;
+
+    }
+
+    .anayemekcontainer {
+      display: flex;
+      font-weight: 600;
+    }
+
+    .Arasicakcontainer {
+      font-weight: 600;
+    }
+
+    .video {
+      display: flex;
+    }
+
+    .carouselExample {
+      margin-top: 0px;
+    }
+
+    .videoluresim {
+      display: block;
+      /* Div elementinin videonun boyutuna uygun genişlemesini sağlar */
+    }
+
+    .videoluresim video {
+      width: 100%;
+      margin-top: 40px;
+      height: auto;
+      background-color: transparent;
+      margin-bottom: 40px;
+    }
+
+    .Tanitim {
+      color: #080c0c;
+    }
+
+    .row justify-content-center {
+      margin-bottom: 50px;
+    }
+
+    .mt-7 {
+      margin-top: 40px;
+    }
+
+    footer {
+      color: blcak;
+      padding: 20px;
+    }
+
+    .card {
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+
+    .card-body {
+      height: 200px;
+      overflow: hidden;
+
+    }
+
+    .copyright {
+      color: #f8f8f8;
+      height: 5vh;
+    }
+  </style>
+  <div class="LogoContainer">
+    <img class="logo" src="images/grantilogo.png" alt="">
+  </div>
+  <div class="Navbarcontainer">
+    <div class=" Navbar">
+      <a class="link" href="#menü">MENÜMÜZ</a>
+      <a class="link" href="#Tanitim">TANITIM</a>
+      <a class="link" href="#iletisim">İLETİŞİM</a>
+    </div>
+  </div>
+
+
+  <div class="lineContainer">
+    <div class="container">
+      <div class="line"></div>
+      <div class="Line"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Maviyengeç.jpg" style="  width: 100%;">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="menü">
+    <div class="text-start mt-7">
+      <div class="baslik">
+        <h1>MENÜMÜZ</h1>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+
+  <div class="Arasicakcontainer d-flex">
+    <div class="images">
+      <img src="images/fener kavurma.png" height="400px" width="400">
+    </div>
+    <div class="yazi mt-6" style="margin-left: 100px;"> <!-- Yazının solunda 20 piksel boşluk -->
+
+      <p>Deneyiminize lezzetli bir mola vermek için ara sıcaklarımızı keşfedin! Yemeğinizin ana yemeği öncesinde veya
+        yanında tadına doyulmaz lezzetler sunan ara sıcaklarımızla damaklarınızı şenlendirin. Mükemmel tatlarla dolu
+        menümüzde her zevke uygun ara sıcak seçeneklerimiz bulunmaktadır.</p>
+      <br />
+      <p>Özenle seçilmiş malzemelerle hazırlanan ara sıcaklarımız, ustalarımızın maharetli ellerinde özel tariflerle
+        buluşuyor. Her lokmada tazelik ve lezzet vadeden ara sıcaklarımızla yemeğinizin keyfini ikiye katlayın.
+      </p>
+      <br />
+      <p>Misafirperverlik ve lezzetin buluştuğu restoranımızda ara sıcaklarımızla damaklarınızı şımartın. Sizi
+        bekliyoruz!</p>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <div class="anayemekcontainer d-flex">
+    <div class="yazi mt-6 mr-3" style="margin-right: 100px;">
+
+      <p> Damaklarınıza hitap eden restoranımızda, denizin taze lezzetlerini sunuyoruz. Balık tutkunları için özel
+        olarak hazırladığımız menümüzde, Akdeniz'in en taze ve en lezzetli balıklarını bulacaksınız.
+        </br>
+      <p>Misafirlerimizin damak zevkine hitap eden menümüzde, her zevke ve ihtiyaca uygun bir balık seçeneği
+        bulunmaktadır. Taze, lezzetli ve sağlıklı balıklarımız, uzman şeflerimizin özenle hazırladığı özel tariflerle
+        sunulmaktadır.</p>
+      </p>
+
+      <p>Şehrin kalbinde, muhteşem bir deniz manzarası eşliğinde, enfes balık lezzetlerini tadabileceğiniz
+        restoranımıza sizleri bekliyoruz. Eşsiz lezzetler ve unutulmaz bir atmosfer için rezervasyon yapmayı
+        unutmayın!</p>
+    </div>
+    <div class="images2 mt-6">
+      <img src="images/balık1.png" height="400px" width="400">
+    </div>
+  </div>
+
+
+  <div class="Tanitim" id="Tanitim">
+    <div class="container text-start mt-4">
+      <div class="baslik">
+        <h1>TANITIM </h1>
+      </div>
+    </div>
+
+    <div class="videoluresim">
+      <video controls>
+        <source src="images/MaviYengec.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <br>
+  <div class="row justify-content-center">
+    <div class="col-md-4 mt-1">
+      <div class="card">
+        <img src="images/grid6.jpg" class="card-img-top img-fluid">
+        <div class="card-body">
+          <h3 class="card-title">Denizden Gelen Taze Tatlar</h3>
+          <p class="card-text">Izgara, buğulama, kızartma veya fırında pişirme gibi çeşitli yöntemlerle hazırlanan balık
+            çeşitlerimiz, damakları şenlendiren bir deneyim sunuyor
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-1">
+      <div class="card">
+        <img src="images/grid2.jpg" class="card-img-top img-fluid">
+        <div class="card-body">
+          <h3 class="card-title">Lezzet Şöleni</h3>
+          <p class="card-text">
+            Doğru seçilmiş malzemelerle
+            hazırlanan mezeler, damaklarda iz bırakan tatlarla misafirlerimizi buluşturuyor.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-1">
+      <div class="card">
+        <img src="images/grid1.jpg" class="card-img-top img-fluid">
+        <div class="card-body">
+          <h3 class="card-title">Büyüleyici Manzara</h3>
+          <p class="card-text">Restoranımız, sadece lezzetli yemekler sunmakla kalmıyor, aynı zamanda eşsiz bir deniz
+            manzarasıyla da misafirlerini büyülüyor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lineContainer">
+    <div class="container">
+      <div class="line"></div>
+      <div class="Line"></div>
+    </div>
+  </div>
+
+  <footer style="height: 50vh; display: flex;" id="iletisim">
+    <div class="flex" style="display: flex; flex-direction: column; gap: 40px ">
+      <i style="font-size: 15px;" class="fa-solid fa-phone"> 0212 425 13 23</i>
+      <i style="font-size: 15px;" class="fa-solid fa-phone">  0532 440 92 45</i>
+      <span style="display: flex;">
+        <i style="font-size: 30px;" class="fa-brands fa-instagram"></i>
+        <p style="padding-left: 5px; font-size: 20px; letter-spacing: 3px;">@maviyengecflorya</p>
+      </span>
+      <div class="calisma">
+        <span>
+          <h3>Çalışma Saatlerimiz</h3>
+        </span>
+        <br>
+        <span>
+          <p>her gün 11.00 - 01.00</p>
+
+        </span>
+      </div>
+    </div>
+
+    <div style="width: 100%">
+      <iframe style="float: right; margin-left: 10px;" width="650" height="400" frameborder="0" scrolling="no"
+        marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Basınköy,%20Basınköy%20İstanbul%20Cd.%20No:31,%2034153%20Bakırköy/İstanbul+(Mavi%20Yengeç)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+      </iframe>
+    </div>
+  </footer>
+</div>
+
+<div style="background-color: #000;">
+  <div class="container" style="height: 10vh;  ">
+    <div class="row">
+      <div class="copyright text-center"><br>
+        <p>© Copyright 2024 Tüm Hakları Saklıdır. <span style="color: orange;">Cem E</span> Tarafından geliştirilmiştir
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
