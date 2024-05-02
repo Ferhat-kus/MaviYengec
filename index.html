@@ -16,175 +16,177 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="">
     <title>MaviYengec Florya</title>
+    <style>
+      * {
+        font-family: "Ubuntu", sans-serif;
+  
+        scroll-behavior: smooth;
+      }
+  
+  
+      body {
+        background-image:
+          url("images/bgimage.png");
+        background-size: contain;
+        
+  
+      }
+  
+  
+      .LogoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: 100%;
+      }
+  
+      .Navbar {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+  
+      }
+  
+      .Navbarcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+      }
+  
+      .Navbarcontainer .Navbar .link {
+        text-decoration: none;
+        color: #000;
+        /* Bağlantı metinlerinin varsayılan rengi */
+        position: relative;
+        /* Bağlantıların konumunu belirle */
+      }
+  
+      .Navbarcontainer .Navbar .link:hover {
+        color: #000A76;
+        /* Bağlantı metinlerinin üzerine gelindiğindeki renk - turuncu */
+      }
+  
+  
+      .Navbarcontainer .Navbar .link:hover::before {
+        /* Üst çizgiyi ayarla */
+        bottom: auto;
+      }
+  
+  
+      .link {
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #43515B;
+        font-family: 'Montserrat', sans-serif;
+  
+      }
+  
+      .lineContainer {
+        margin: 10px 0 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+  
+      .line {
+        width: 96%;
+        height: 2px;
+        background: #000;
+      }
+  
+      .Line {
+        width: 30%;
+        height: 3px;
+      }
+  
+      .slidercontainer {
+        text-align: center;
+  
+      }
+  
+      .baslikcontainer {
+        color: #808080;
+        width: 100%;
+  
+      }
+  
+      .yazi {
+        font-size: 20px;
+        font-family: Times New Roman', Times, serif;">;
+  
+      }
+  
+      .anayemekcontainer {
+        display: flex;
+        font-weight: 600;
+      }
+  
+      .Arasicakcontainer {
+        font-weight: 600;
+      }
+  
+      .video {
+        display: flex;
+      }
+  
+      .carouselExample {
+        margin-top: 0px;
+      }
+  
+      .videoluresim {
+        display: block;
+        /* Div elementinin videonun boyutuna uygun genişlemesini sağlar */
+      }
+  
+      .videoluresim video {
+        width: 100%;
+        margin-top: 40px;
+        height: auto;
+        background-color: transparent;
+        margin-bottom: 40px;
+      }
+  
+      .Tanitim {
+        color: #080c0c;
+      }
+  
+      .row justify-content-center {
+        margin-bottom: 50px;
+      }
+  
+      .mt-7 {
+        margin-top: 40px;
+      }
+  
+      footer {
+        color: blcak;
+        padding: 20px;
+      }
+  
+      .card {
+        margin-bottom: 40px;
+        font-size: 20px;
+      }
+  
+      .card-body {
+        height: 200px;
+        overflow: hidden;
+  
+      }
+  
+      .copyright {
+        color: #f8f8f8;
+        height: 5vh;
+      }
+    </style>
   </head>
-  <style>
-    * {
-      font-family: "Ubuntu", sans-serif;
-
-      scroll-behavior: smooth;
-    }
-
-
-    body {
-      background-image:
-        url("images/bgimage.png");
-      background-size: contain;
-
-    }
-
-
-    .LogoContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 30vh;
-      width: 100%;
-    }
-
-    .Navbar {
-      width: 30%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-
-    }
-
-    .Navbarcontainer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 100%;
-    }
-
-    .Navbarcontainer .Navbar .link {
-      text-decoration: none;
-      color: #000;
-      /* Bağlantı metinlerinin varsayılan rengi */
-      position: relative;
-      /* Bağlantıların konumunu belirle */
-    }
-
-    .Navbarcontainer .Navbar .link:hover {
-      color: #000A76;
-      /* Bağlantı metinlerinin üzerine gelindiğindeki renk - turuncu */
-    }
-
-
-    .Navbarcontainer .Navbar .link:hover::before {
-      /* Üst çizgiyi ayarla */
-      bottom: auto;
-    }
-
-
-    .link {
-      font-size: 20px;
-      font-weight: 600;
-      text-decoration: none;
-      color: #43515B;
-      font-family: 'Montserrat', sans-serif;
-
-    }
-
-    .lineContainer {
-      margin: 10px 0 10px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    .line {
-      width: 96%;
-      height: 2px;
-      background: #000;
-    }
-
-    .Line {
-      width: 30%;
-      height: 3px;
-    }
-
-    .slidercontainer {
-      text-align: center;
-
-    }
-
-    .baslikcontainer {
-      color: #808080;
-      width: 100%;
-
-    }
-
-    .yazi {
-      font-size: 20px;
-      font-family: Times New Roman', Times, serif;">;
-
-    }
-
-    .anayemekcontainer {
-      display: flex;
-      font-weight: 600;
-    }
-
-    .Arasicakcontainer {
-      font-weight: 600;
-    }
-
-    .video {
-      display: flex;
-    }
-
-    .carouselExample {
-      margin-top: 0px;
-    }
-
-    .videoluresim {
-      display: block;
-      /* Div elementinin videonun boyutuna uygun genişlemesini sağlar */
-    }
-
-    .videoluresim video {
-      width: 100%;
-      margin-top: 40px;
-      height: auto;
-      background-color: transparent;
-      margin-bottom: 40px;
-    }
-
-    .Tanitim {
-      color: #080c0c;
-    }
-
-    .row justify-content-center {
-      margin-bottom: 50px;
-    }
-
-    .mt-7 {
-      margin-top: 40px;
-    }
-
-    footer {
-      color: blcak;
-      padding: 20px;
-    }
-
-    .card {
-      margin-bottom: 40px;
-      font-size: 20px;
-    }
-
-    .card-body {
-      height: 200px;
-      overflow: hidden;
-
-    }
-
-    .copyright {
-      color: #f8f8f8;
-      height: 5vh;
-    }
-  </style>
+  <body>
   <div class="LogoContainer">
     <img class="logo" src="images/grantilogo.png" alt="">
   </div>
@@ -195,8 +197,6 @@
       <a class="link" href="#iletisim">İLETİŞİM</a>
     </div>
   </div>
-
-
   <div class="lineContainer">
     <div class="container">
       <div class="line"></div>
@@ -204,9 +204,6 @@
     </div>
   </div>
 </div>
-
-
-
 <div class="container">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -282,8 +279,9 @@
     </div>
   </div>
   <br>
-  <div class="row justify-content-center">
-    <div class="col-md-4 mt-1">
+  <div class="row justify-content-center " 
+  style=" background-image: url("images/balık1.png");">
+    <div class="col-md-4 mt-4">
       <div class="card">
         <img src="images/grid6.jpg" class="card-img-top img-fluid">
         <div class="card-body">
@@ -295,7 +293,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mt-1">
+    <div class="col-md-4 mt-4">
       <div class="card">
         <img src="images/grid2.jpg" class="card-img-top img-fluid">
         <div class="card-body">
@@ -307,7 +305,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mt-1">
+    <div class="col-md-4 mt-4">
       <div class="card">
         <img src="images/grid1.jpg" class="card-img-top img-fluid">
         <div class="card-body">
@@ -355,7 +353,6 @@
     </div>
   </footer>
 </div>
-
 <div style="background-color: #000;">
   <div class="container" style="height: 10vh;  ">
     <div class="row">
